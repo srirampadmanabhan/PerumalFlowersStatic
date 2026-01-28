@@ -2,7 +2,11 @@
   "permissions": {
     "allow": [
       "Bash(powershell:*)",
-      "Bash(python -c:*)"
+      "Bash(python -c:*)",
+      "WebFetch(domain:vivekflowers.com)",
+      "WebSearch",
+      "WebFetch(domain:pooja.vivekflowers.com)",
+      "WebFetch(domain:flowertest.vivekflowers.com)"
     ]
   }
 }

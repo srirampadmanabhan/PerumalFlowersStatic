@@ -15,8 +15,7 @@
     <nav class="navbar">
         <div class="nav-container">
             <a href="home.html" class="nav-logo">
-                <span class="logo-text">PERUMAL</span>
-                <span class="logo-sub">FLOWERS</span>
+                <img src="assets/images/logo.png" alt="Perumal Flowers" class="logo-img">
             </a>
             <button class="nav-toggle" id="navToggle">
                 <i class="fas fa-bars"></i>
@@ -72,7 +71,7 @@
                 <!-- Flower Sale -->
                 <div class="category-card">
                     <div class="category-image">
-                        <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=400&h=300&fit=crop" alt="Fresh Flowers">
+                        <img src="https://cdn.shopify.com/s/files/1/0704/9956/5726/files/102_fbba647d-8f2e-44b4-b3fc-a44da65cae32.jpg" alt="Fresh Flower Garlands">
                         <div class="category-overlay">
                             <i class="fas fa-shopping-basket"></i>
                         </div>
@@ -90,8 +89,7 @@
                 <!-- Pooja Items -->
                 <div class="category-card">
                     <div class="category-image">
-                        <img src="https://images.unsplash.com/photo-1604608672516-f1b9b1b1b1b1?w=400&h=300&fit=crop" alt="Pooja Items"
-                             onerror="this.src='https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=400&h=300&fit=crop'">
+                        <img src="https://cdn.shopify.com/s/files/1/0704/9956/5726/files/207.jpg" alt="Pooja Items">
                         <div class="category-overlay">
                             <i class="fas fa-om"></i>
                         </div>
@@ -173,155 +171,420 @@
         <div class="container">
             <div class="section-header">
                 <span class="section-badge">Find Us</span>
-                <h2 class="section-title">Our Branches in Abu Dhabi</h2>
-                <p class="section-desc">5 convenient locations to serve you better</p>
+                <h2 class="section-title">Our Branches Across UAE</h2>
+                <p class="section-desc">13 convenient locations across 5 emirates to serve you better</p>
             </div>
 
-            <div class="branches-grid">
-                <!-- Branch 1 -->
-                <div class="branch-card">
-                    <div class="branch-header">
-                        <div class="branch-number">01</div>
-                        <div class="branch-badge">Main Branch</div>
+            <!-- Emirate Tabs -->
+            <div class="emirate-tabs">
+                <button class="emirate-tab active" data-emirate="abudhabi">Abu Dhabi <span class="branch-count">5</span></button>
+                <button class="emirate-tab" data-emirate="sharjah">Sharjah <span class="branch-count">5</span></button>
+                <button class="emirate-tab" data-emirate="dubai">Dubai <span class="branch-count">1</span></button>
+                <button class="emirate-tab" data-emirate="alain">Al Ain <span class="branch-count">1</span></button>
+                <button class="emirate-tab" data-emirate="ajman">Ajman <span class="branch-count">1</span></button>
+            </div>
+
+            <!-- Abu Dhabi Branches -->
+            <div class="emirate-branches active" id="abudhabi">
+                <h3 class="emirate-title"><i class="fas fa-map-marker-alt"></i> Abu Dhabi Branches</h3>
+                <div class="branches-grid">
+                    <div class="branch-card">
+                        <div class="branch-header">
+                            <div class="branch-number">01</div>
+                            <div class="branch-badge">Main Branch</div>
+                        </div>
+                        <h3 class="branch-name">Perumal Flowers Trading L.L.C</h3>
+                        <div class="branch-details">
+                            <div class="branch-info">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p>Behind Royal Rose Hotel & Swagath Restaurant, Electra Street, Abu Dhabi</p>
+                            </div>
+                            <div class="branch-info">
+                                <i class="fas fa-phone"></i>
+                                <p>Landline: 02 448 8240</p>
+                            </div>
+                            <div class="branch-info">
+                                <i class="fas fa-mobile-alt"></i>
+                                <p>Mobile: 056 198 2288</p>
+                            </div>
+                        </div>
+                        <div class="branch-actions">
+                            <a href="https://wa.me/971561982288" target="_blank" class="whatsapp-btn">
+                                <i class="fab fa-whatsapp"></i> WhatsApp
+                            </a>
+                            <a href="https://maps.google.com/?q=Royal+Rose+Hotel+Electra+Street+Abu+Dhabi" target="_blank" class="location-btn">
+                                <i class="fas fa-directions"></i> Directions
+                            </a>
+                        </div>
                     </div>
-                    <h3 class="branch-name">Perumal Flowers Trading L.L.C</h3>
-                    <div class="branch-details">
-                        <div class="branch-info">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <p>Behind Royal Rose Hotel & Swagath Restaurant, Electra Street, Abu Dhabi</p>
+
+                    <div class="branch-card">
+                        <div class="branch-header">
+                            <div class="branch-number">02</div>
                         </div>
-                        <div class="branch-info">
-                            <i class="fas fa-phone"></i>
-                            <p>Landline: 02 448 8240</p>
+                        <h3 class="branch-name">Perumal Flowers General Trading L.L.C</h3>
+                        <div class="branch-details">
+                            <div class="branch-info">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p>Electra Street, Abu Dhabi</p>
+                            </div>
+                            <div class="branch-info">
+                                <i class="fas fa-phone"></i>
+                                <p>Landline: 02 446 1619</p>
+                            </div>
+                            <div class="branch-info">
+                                <i class="fas fa-mobile-alt"></i>
+                                <p>Mobile: 050 172 7128</p>
+                            </div>
                         </div>
-                        <div class="branch-info">
-                            <i class="fas fa-mobile-alt"></i>
-                            <p>Mobile: 056 198 2288</p>
+                        <div class="branch-actions">
+                            <a href="https://wa.me/971501727128" target="_blank" class="whatsapp-btn">
+                                <i class="fab fa-whatsapp"></i> WhatsApp
+                            </a>
+                            <a href="https://maps.google.com/?q=Electra+Street+Abu+Dhabi" target="_blank" class="location-btn">
+                                <i class="fas fa-directions"></i> Directions
+                            </a>
                         </div>
                     </div>
-                    <div class="branch-actions">
-                        <a href="https://wa.me/971561982288" target="_blank" class="whatsapp-btn">
-                            <i class="fab fa-whatsapp"></i> Chat on WhatsApp
-                        </a>
-                        <a href="https://maps.google.com/?q=Electra+Street+Abu+Dhabi+Royal+Rose+Hotel" target="_blank" class="location-btn">
-                            <i class="fas fa-directions"></i> Get Directions
-                        </a>
+
+                    <div class="branch-card">
+                        <div class="branch-header">
+                            <div class="branch-number">03</div>
+                        </div>
+                        <h3 class="branch-name">Perumal Stores General Trading L.L.C</h3>
+                        <div class="branch-details">
+                            <div class="branch-info">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p>Behind Al Madina Hyper Market, Shabiya 10, Abu Dhabi</p>
+                            </div>
+                            <div class="branch-info">
+                                <i class="fas fa-phone"></i>
+                                <p>Landline: 02 443 9395</p>
+                            </div>
+                            <div class="branch-info">
+                                <i class="fas fa-mobile-alt"></i>
+                                <p>Mobile: 054 376 7375</p>
+                            </div>
+                        </div>
+                        <div class="branch-actions">
+                            <a href="https://wa.me/971543767375" target="_blank" class="whatsapp-btn">
+                                <i class="fab fa-whatsapp"></i> WhatsApp
+                            </a>
+                            <a href="https://maps.google.com/?q=Al+Madina+Hyper+Market+Shabiya+10+Abu+Dhabi" target="_blank" class="location-btn">
+                                <i class="fas fa-directions"></i> Directions
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="branch-card">
+                        <div class="branch-header">
+                            <div class="branch-number">04</div>
+                        </div>
+                        <h3 class="branch-name">Perumal Flowers General Trading L.L.C</h3>
+                        <div class="branch-details">
+                            <div class="branch-info">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p>Opp Maple Wood School, Shabiya 9, Abu Dhabi</p>
+                            </div>
+                            <div class="branch-info">
+                                <i class="fas fa-mobile-alt"></i>
+                                <p>Mobile: 050 312 1274</p>
+                            </div>
+                        </div>
+                        <div class="branch-actions">
+                            <a href="https://wa.me/971503121274" target="_blank" class="whatsapp-btn">
+                                <i class="fab fa-whatsapp"></i> WhatsApp
+                            </a>
+                            <a href="https://maps.google.com/?q=Maple+Wood+School+Shabiya+9+Abu+Dhabi" target="_blank" class="location-btn">
+                                <i class="fas fa-directions"></i> Directions
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="branch-card">
+                        <div class="branch-header">
+                            <div class="branch-number">05</div>
+                        </div>
+                        <h3 class="branch-name">Perumal Flowers General Trading L.L.C</h3>
+                        <div class="branch-details">
+                            <div class="branch-info">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p>Beside Payanoor Restaurant, Shabiya 11, Abu Dhabi</p>
+                            </div>
+                            <div class="branch-info">
+                                <i class="fas fa-phone"></i>
+                                <p>Landline: 02 447 4677</p>
+                            </div>
+                            <div class="branch-info">
+                                <i class="fas fa-mobile-alt"></i>
+                                <p>Mobile: 050 474 7815</p>
+                            </div>
+                        </div>
+                        <div class="branch-actions">
+                            <a href="https://wa.me/971504747815" target="_blank" class="whatsapp-btn">
+                                <i class="fab fa-whatsapp"></i> WhatsApp
+                            </a>
+                            <a href="https://maps.google.com/?q=Payanoor+Restaurant+Shabiya+11+Abu+Dhabi" target="_blank" class="location-btn">
+                                <i class="fas fa-directions"></i> Directions
+                            </a>
+                        </div>
                     </div>
                 </div>
+            </div>
 
-                <!-- Branch 2 -->
-                <div class="branch-card">
-                    <div class="branch-header">
-                        <div class="branch-number">02</div>
+            <!-- Sharjah Branches -->
+            <div class="emirate-branches" id="sharjah">
+                <h3 class="emirate-title"><i class="fas fa-map-marker-alt"></i> Sharjah Branches</h3>
+                <div class="branches-grid">
+                    <div class="branch-card">
+                        <div class="branch-header">
+                            <div class="branch-number">01</div>
+                        </div>
+                        <h3 class="branch-name">Perumal Stores General Trading L.L.C</h3>
+                        <div class="branch-details">
+                            <div class="branch-info">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p>King Faisal Street, Opp. Safeer Market, Abu Shagara, Sharjah</p>
+                            </div>
+                            <div class="branch-info">
+                                <i class="fas fa-phone"></i>
+                                <p>Landline: 06 520 0928 / 06 577 8565</p>
+                            </div>
+                            <div class="branch-info">
+                                <i class="fas fa-mobile-alt"></i>
+                                <p>Mobile: 055 477 476</p>
+                            </div>
+                        </div>
+                        <div class="branch-actions">
+                            <a href="https://wa.me/97155477476" target="_blank" class="whatsapp-btn">
+                                <i class="fab fa-whatsapp"></i> WhatsApp
+                            </a>
+                            <a href="https://maps.google.com/?q=King+Faisal+Street+Safeer+Market+Abu+Shagara+Sharjah" target="_blank" class="location-btn">
+                                <i class="fas fa-directions"></i> Directions
+                            </a>
+                        </div>
                     </div>
-                    <h3 class="branch-name">Perumal Flowers General Trading L.L.C</h3>
-                    <div class="branch-details">
-                        <div class="branch-info">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <p>Electra Street, Abu Dhabi</p>
+
+                    <div class="branch-card">
+                        <div class="branch-header">
+                            <div class="branch-number">02</div>
                         </div>
-                        <div class="branch-info">
-                            <i class="fas fa-phone"></i>
-                            <p>Landline: 02 446 1619</p>
+                        <h3 class="branch-name">South India Flowers & Nov Tr</h3>
+                        <div class="branch-details">
+                            <div class="branch-info">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p>King Faisal Street, Opp. Safeer Market, Abu Shagara, Sharjah</p>
+                            </div>
+                            <div class="branch-info">
+                                <i class="fas fa-phone"></i>
+                                <p>Landline: 06 559 9182</p>
+                            </div>
+                            <div class="branch-info">
+                                <i class="fas fa-mobile-alt"></i>
+                                <p>Mobile: 050 987 5877</p>
+                            </div>
                         </div>
-                        <div class="branch-info">
-                            <i class="fas fa-mobile-alt"></i>
-                            <p>Mobile: 050 172 7128</p>
+                        <div class="branch-actions">
+                            <a href="https://wa.me/971509875877" target="_blank" class="whatsapp-btn">
+                                <i class="fab fa-whatsapp"></i> WhatsApp
+                            </a>
+                            <a href="https://maps.google.com/?q=King+Faisal+Street+Safeer+Market+Abu+Shagara+Sharjah" target="_blank" class="location-btn">
+                                <i class="fas fa-directions"></i> Directions
+                            </a>
                         </div>
                     </div>
-                    <div class="branch-actions">
-                        <a href="https://wa.me/971501727128" target="_blank" class="whatsapp-btn">
-                            <i class="fab fa-whatsapp"></i> Chat on WhatsApp
-                        </a>
-                        <a href="https://maps.google.com/?q=Electra+Street+Abu+Dhabi" target="_blank" class="location-btn">
-                            <i class="fas fa-directions"></i> Get Directions
-                        </a>
+
+                    <div class="branch-card">
+                        <div class="branch-header">
+                            <div class="branch-number">03</div>
+                        </div>
+                        <h3 class="branch-name">Perumal Stores General Trading L.L.C</h3>
+                        <div class="branch-details">
+                            <div class="branch-info">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p>Reem Avenue Building, Al Nahda, Sharjah</p>
+                            </div>
+                            <div class="branch-info">
+                                <i class="fas fa-phone"></i>
+                                <p>Landline: 06 559 2132</p>
+                            </div>
+                            <div class="branch-info">
+                                <i class="fas fa-mobile-alt"></i>
+                                <p>Mobile: 050 727 7478</p>
+                            </div>
+                        </div>
+                        <div class="branch-actions">
+                            <a href="https://wa.me/971507277478" target="_blank" class="whatsapp-btn">
+                                <i class="fab fa-whatsapp"></i> WhatsApp
+                            </a>
+                            <a href="https://maps.google.com/?q=Reem+Avenue+Building+Al+Nahda+Sharjah" target="_blank" class="location-btn">
+                                <i class="fas fa-directions"></i> Directions
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="branch-card">
+                        <div class="branch-header">
+                            <div class="branch-number">04</div>
+                        </div>
+                        <h3 class="branch-name">South India Flowers & Nov Tr</h3>
+                        <div class="branch-details">
+                            <div class="branch-info">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p>Al Ghuwair Market, Rolla, Sharjah</p>
+                            </div>
+                            <div class="branch-info">
+                                <i class="fas fa-phone"></i>
+                                <p>Landline: 06 512 291</p>
+                            </div>
+                            <div class="branch-info">
+                                <i class="fas fa-mobile-alt"></i>
+                                <p>Mobile: 055 388 3165</p>
+                            </div>
+                        </div>
+                        <div class="branch-actions">
+                            <a href="https://wa.me/971553883165" target="_blank" class="whatsapp-btn">
+                                <i class="fab fa-whatsapp"></i> WhatsApp
+                            </a>
+                            <a href="https://maps.google.com/?q=Al+Ghuwair+Market+Rolla+Sharjah" target="_blank" class="location-btn">
+                                <i class="fas fa-directions"></i> Directions
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="branch-card">
+                        <div class="branch-header">
+                            <div class="branch-number">05</div>
+                        </div>
+                        <h3 class="branch-name">Perumal Flowers General Trading L.L.C</h3>
+                        <div class="branch-details">
+                            <div class="branch-info">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p>Fire Station Road, Ala Building, Muweila, Sharjah</p>
+                            </div>
+                            <div class="branch-info">
+                                <i class="fas fa-phone"></i>
+                                <p>Landline: 06 522 2573</p>
+                            </div>
+                            <div class="branch-info">
+                                <i class="fas fa-mobile-alt"></i>
+                                <p>Mobile: 050 388 4393</p>
+                            </div>
+                        </div>
+                        <div class="branch-actions">
+                            <a href="https://wa.me/971503884393" target="_blank" class="whatsapp-btn">
+                                <i class="fab fa-whatsapp"></i> WhatsApp
+                            </a>
+                            <a href="https://maps.google.com/?q=Fire+Station+Road+Muweila+Sharjah" target="_blank" class="location-btn">
+                                <i class="fas fa-directions"></i> Directions
+                            </a>
+                        </div>
                     </div>
                 </div>
+            </div>
 
-                <!-- Branch 3 -->
-                <div class="branch-card">
-                    <div class="branch-header">
-                        <div class="branch-number">03</div>
-                    </div>
-                    <h3 class="branch-name">Perumal Stores General Trading L.L.C</h3>
-                    <div class="branch-details">
-                        <div class="branch-info">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <p>Behind Al Madina Hyper Market, Shabiya 10, Abu Dhabi</p>
+            <!-- Dubai Branch -->
+            <div class="emirate-branches" id="dubai">
+                <h3 class="emirate-title"><i class="fas fa-map-marker-alt"></i> Dubai Branch</h3>
+                <div class="branches-grid">
+                    <div class="branch-card">
+                        <div class="branch-header">
+                            <div class="branch-number">01</div>
+                            <div class="branch-badge">Main Shop</div>
                         </div>
-                        <div class="branch-info">
-                            <i class="fas fa-phone"></i>
-                            <p>Landline: 02 443 9395</p>
+                        <h3 class="branch-name">Natural Flowers Trading L.L.C</h3>
+                        <div class="branch-details">
+                            <div class="branch-info">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p>Dubai</p>
+                            </div>
+                            <div class="branch-info">
+                                <i class="fas fa-phone"></i>
+                                <p>Landline: 04 353 0556</p>
+                            </div>
+                            <div class="branch-info">
+                                <i class="fas fa-mobile-alt"></i>
+                                <p>Mobile: 050 353 1752</p>
+                            </div>
                         </div>
-                        <div class="branch-info">
-                            <i class="fas fa-mobile-alt"></i>
-                            <p>Mobile: 054 376 7375</p>
+                        <div class="branch-actions">
+                            <a href="https://wa.me/971503531752" target="_blank" class="whatsapp-btn">
+                                <i class="fab fa-whatsapp"></i> WhatsApp
+                            </a>
+                            <a href="https://maps.google.com/?q=Dubai+UAE" target="_blank" class="location-btn">
+                                <i class="fas fa-directions"></i> Directions
+                            </a>
                         </div>
-                    </div>
-                    <div class="branch-actions">
-                        <a href="https://wa.me/971543767375" target="_blank" class="whatsapp-btn">
-                            <i class="fab fa-whatsapp"></i> Chat on WhatsApp
-                        </a>
-                        <a href="https://maps.google.com/?q=Shabiya+10+Abu+Dhabi+Al+Madina+Hyper" target="_blank" class="location-btn">
-                            <i class="fas fa-directions"></i> Get Directions
-                        </a>
                     </div>
                 </div>
+            </div>
 
-                <!-- Branch 4 -->
-                <div class="branch-card">
-                    <div class="branch-header">
-                        <div class="branch-number">04</div>
-                    </div>
-                    <h3 class="branch-name">Perumal Flowers General Trading L.L.C</h3>
-                    <div class="branch-details">
-                        <div class="branch-info">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <p>Opp Maple Wood School, Shabiya 9, Abu Dhabi</p>
+            <!-- Al Ain Branch -->
+            <div class="emirate-branches" id="alain">
+                <h3 class="emirate-title"><i class="fas fa-map-marker-alt"></i> Al Ain Branch</h3>
+                <div class="branches-grid">
+                    <div class="branch-card">
+                        <div class="branch-header">
+                            <div class="branch-number">01</div>
                         </div>
-                        <div class="branch-info">
-                            <i class="fas fa-mobile-alt"></i>
-                            <p>Mobile: 050 312 1274</p>
+                        <h3 class="branch-name">Perumal Flowers General Trading L.L.C</h3>
+                        <div class="branch-details">
+                            <div class="branch-info">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p>Beside Damas Jewellery, Meena Bazar, Al Ain</p>
+                            </div>
+                            <div class="branch-info">
+                                <i class="fas fa-phone"></i>
+                                <p>Landline: 03 736 3804</p>
+                            </div>
+                            <div class="branch-info">
+                                <i class="fas fa-mobile-alt"></i>
+                                <p>Mobile: 050 575 7387</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="branch-actions">
-                        <a href="https://wa.me/971503121274" target="_blank" class="whatsapp-btn">
-                            <i class="fab fa-whatsapp"></i> Chat on WhatsApp
-                        </a>
-                        <a href="https://maps.google.com/?q=Maple+Wood+School+Shabiya+9+Abu+Dhabi" target="_blank" class="location-btn">
-                            <i class="fas fa-directions"></i> Get Directions
-                        </a>
+                        <div class="branch-actions">
+                            <a href="https://wa.me/971505757387" target="_blank" class="whatsapp-btn">
+                                <i class="fab fa-whatsapp"></i> WhatsApp
+                            </a>
+                            <a href="https://maps.google.com/?q=Damas+Jewellery+Meena+Bazar+Al+Ain" target="_blank" class="location-btn">
+                                <i class="fas fa-directions"></i> Directions
+                            </a>
+                        </div>
                     </div>
                 </div>
+            </div>
 
-                <!-- Branch 5 -->
-                <div class="branch-card">
-                    <div class="branch-header">
-                        <div class="branch-number">05</div>
-                    </div>
-                    <h3 class="branch-name">Perumal Flowers General Trading L.L.C</h3>
-                    <div class="branch-details">
-                        <div class="branch-info">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <p>Beside Payanoor Restaurant, Shabiya 11, Abu Dhabi</p>
+            <!-- Ajman Branch -->
+            <div class="emirate-branches" id="ajman">
+                <h3 class="emirate-title"><i class="fas fa-map-marker-alt"></i> Ajman Branch</h3>
+                <div class="branches-grid">
+                    <div class="branch-card">
+                        <div class="branch-header">
+                            <div class="branch-number">01</div>
                         </div>
-                        <div class="branch-info">
-                            <i class="fas fa-phone"></i>
-                            <p>Landline: 02 447 4677</p>
+                        <h3 class="branch-name">Perumal Flowers General Trading L.L.C</h3>
+                        <div class="branch-details">
+                            <div class="branch-info">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p>Near Ajman Bus Station, Ajman</p>
+                            </div>
+                            <div class="branch-info">
+                                <i class="fas fa-phone"></i>
+                                <p>Landline: 06 521 1185</p>
+                            </div>
+                            <div class="branch-info">
+                                <i class="fas fa-mobile-alt"></i>
+                                <p>Mobile: 050 388 6484</p>
+                            </div>
                         </div>
-                        <div class="branch-info">
-                            <i class="fas fa-mobile-alt"></i>
-                            <p>Mobile: 050 474 7815</p>
+                        <div class="branch-actions">
+                            <a href="https://wa.me/971503886484" target="_blank" class="whatsapp-btn">
+                                <i class="fab fa-whatsapp"></i> WhatsApp
+                            </a>
+                            <a href="https://maps.google.com/?q=Ajman+Bus+Station+Ajman" target="_blank" class="location-btn">
+                                <i class="fas fa-directions"></i> Directions
+                            </a>
                         </div>
-                    </div>
-                    <div class="branch-actions">
-                        <a href="https://wa.me/971504747815" target="_blank" class="whatsapp-btn">
-                            <i class="fab fa-whatsapp"></i> Chat on WhatsApp
-                        </a>
-                        <a href="https://maps.google.com/?q=Payanoor+Restaurant+Shabiya+11+Abu+Dhabi" target="_blank" class="location-btn">
-                            <i class="fas fa-directions"></i> Get Directions
-                        </a>
                     </div>
                 </div>
             </div>
@@ -361,9 +624,8 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <h3>PERUMAL FLOWERS</h3>
-                    <p>Since 1990</p>
-                    <p class="footer-tagline">Your trusted partner for fresh flowers, pooja essentials, and daily groceries in Abu Dhabi.</p>
+                    <img src="assets/images/logo.png" alt="Perumal Flowers" class="footer-logo">
+                    <p class="footer-tagline">Your trusted partner for fresh flowers, pooja essentials, and daily groceries across UAE - Abu Dhabi, Dubai, Sharjah, Al Ain & Ajman.</p>
                 </div>
                 <div class="footer-links">
                     <h4>Quick Links</h4>
@@ -378,7 +640,7 @@
                     <h4>Contact Us</h4>
                     <p><i class="fas fa-phone"></i> 02 448 8240</p>
                     <p><i class="fab fa-whatsapp"></i> 056 198 2288</p>
-                    <p><i class="fas fa-map-marker-alt"></i> Abu Dhabi, UAE</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 13 Branches Across UAE</p>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -419,6 +681,25 @@
             } else {
                 navbar.classList.remove('scrolled');
             }
+        });
+
+        // Emirate Tabs Functionality
+        const emirateTabs = document.querySelectorAll('.emirate-tab');
+        const emirateBranches = document.querySelectorAll('.emirate-branches');
+
+        emirateTabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                // Remove active class from all tabs and branches
+                emirateTabs.forEach(t => t.classList.remove('active'));
+                emirateBranches.forEach(b => b.classList.remove('active'));
+
+                // Add active class to clicked tab
+                tab.classList.add('active');
+
+                // Show corresponding branches
+                const emirateId = tab.getAttribute('data-emirate');
+                document.getElementById(emirateId).classList.add('active');
+            });
         });
     </script>
 </body>

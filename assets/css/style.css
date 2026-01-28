@@ -77,6 +77,8 @@ img {
     z-index: 1000;
     padding: 20px 0;
     transition: var(--transition);
+    background: rgba(26, 26, 46, 0.95);
+    backdrop-filter: blur(10px);
 }
 
 .navbar.scrolled {
@@ -97,8 +99,17 @@ img {
 
 .nav-logo {
     display: flex;
-    flex-direction: column;
-    line-height: 1.1;
+    align-items: center;
+}
+
+.logo-img {
+    height: 55px;
+    width: auto;
+    transition: var(--transition);
+}
+
+.navbar.scrolled .logo-img {
+    height: 50px;
 }
 
 .logo-text {
@@ -160,7 +171,7 @@ img {
 .announcement-banner {
     background: var(--gradient-secondary);
     padding: 12px 20px;
-    margin-top: 70px;
+    margin-top: 85px;
     position: relative;
     overflow: hidden;
 }
@@ -528,6 +539,87 @@ img {
     background: var(--white);
 }
 
+/* Emirate Tabs */
+.emirate-tabs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.emirate-tab {
+    padding: 12px 25px;
+    background: var(--light-bg);
+    border: 2px solid transparent;
+    border-radius: 50px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--text-dark);
+    cursor: pointer;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.emirate-tab:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.emirate-tab.active {
+    background: var(--gradient-primary);
+    color: var(--white);
+    border-color: transparent;
+}
+
+.emirate-tab .branch-count {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 2px 8px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+
+.emirate-tab.active .branch-count {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.emirate-branches {
+    display: none;
+    animation: fadeIn 0.5s ease;
+}
+
+.emirate-branches.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.emirate-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: var(--text-dark);
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid var(--primary-color);
+    display: inline-block;
+}
+
+.emirate-title i {
+    color: var(--primary-color);
+    margin-right: 10px;
+}
+
 .branches-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -760,6 +852,13 @@ img {
     color: var(--secondary-color);
     font-size: 0.9rem;
     margin-bottom: 15px;
+}
+
+.footer-logo {
+    height: 80px;
+    width: auto;
+    margin-bottom: 15px;
+    filter: brightness(1.1);
 }
 
 .footer-tagline {
@@ -1247,6 +1346,18 @@ img {
 }
 
 @media (max-width: 768px) {
+    .logo-img {
+        height: 45px;
+    }
+
+    .navbar.scrolled .logo-img {
+        height: 40px;
+    }
+
+    .footer-logo {
+        height: 60px;
+    }
+
     .nav-menu {
         position: fixed;
         top: 70px;
@@ -1344,6 +1455,6 @@ img {
     }
 
     .announcement-banner {
-        margin-top: 60px;
+        margin-top: 75px;
     }
 }
