@@ -211,7 +211,7 @@ img {
    =================================== */
 .hero {
     min-height: 100vh;
-    background: linear-gradient(135deg, #880e4f 0%, #ad1457 50%, #c2185b 100%);
+    background: #ffffff;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -222,14 +222,7 @@ img {
 }
 
 .hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('https://cdn.shopify.com/s/files/1/0704/9956/5726/files/99_659a9e57-f271-4131-8ff6-b3ec26a6f437.jpg') center/cover;
-    opacity: 0.15;
+    display: none;
 }
 
 .hero-content {
@@ -254,14 +247,14 @@ img {
     font-family: 'Playfair Display', serif;
     font-size: 4rem;
     font-weight: 700;
-    color: var(--white);
+    color: var(--primary-color);
     margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    text-shadow: none;
 }
 
 .hero-subtitle {
     font-size: 1.25rem;
-    color: rgba(255, 255, 255, 0.8);
+    color: var(--text-light);
     margin-bottom: 40px;
     line-height: 1.8;
 }
@@ -298,13 +291,13 @@ img {
 
 .btn-secondary {
     background: transparent;
-    color: var(--white);
-    border: 2px solid var(--white);
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
 }
 
 .btn-secondary:hover {
-    background: var(--white);
-    color: var(--dark-bg);
+    background: var(--primary-color);
+    color: var(--white);
 }
 
 .btn-large {
@@ -317,7 +310,7 @@ img {
     bottom: 40px;
     left: 50%;
     transform: translateX(-50%);
-    color: var(--white);
+    color: var(--primary-color);
     font-size: 1.5rem;
     animation: scrollBounce 2s infinite;
 }
