@@ -3,25 +3,25 @@
    Modern & Professional Design
    =================================== */
 
-/* CSS Variables */
+/* CSS Variables - Lotus Pink & White Theme */
 :root {
-    --primary-color: #e94560;
-    --primary-dark: #c73e54;
-    --secondary-color: #4a4eb8;
-    --accent-color: #f8d568;
-    --dark-bg: #1a1a2e;
-    --darker-bg: #16213e;
-    --light-bg: #f8f9fa;
+    --primary-color: #d81b60;
+    --primary-dark: #ad1457;
+    --secondary-color: #f06292;
+    --accent-color: #fce4ec;
+    --dark-bg: #880e4f;
+    --darker-bg: #6a0040;
+    --light-bg: #fce4ec;
     --white: #ffffff;
-    --text-dark: #2d3436;
-    --text-light: #636e72;
-    --text-muted: #b2bec3;
+    --text-dark: #4a1942;
+    --text-light: #7b5175;
+    --text-muted: #c48bb8;
     --success-color: #25d366;
-    --gradient-primary: linear-gradient(135deg, #e94560, #ff6b6b);
-    --gradient-secondary: linear-gradient(135deg, #4a4eb8, #6c63ff);
-    --shadow-sm: 0 2px 10px rgba(0, 0, 0, 0.1);
-    --shadow-md: 0 5px 20px rgba(0, 0, 0, 0.15);
-    --shadow-lg: 0 10px 40px rgba(0, 0, 0, 0.2);
+    --gradient-primary: linear-gradient(135deg, #ec407a, #f48fb1);
+    --gradient-secondary: linear-gradient(135deg, #d81b60, #f06292);
+    --shadow-sm: 0 2px 10px rgba(216, 27, 96, 0.1);
+    --shadow-md: 0 5px 20px rgba(216, 27, 96, 0.15);
+    --shadow-lg: 0 10px 40px rgba(216, 27, 96, 0.2);
     --border-radius: 12px;
     --transition: all 0.3s ease;
 }
@@ -77,12 +77,12 @@ img {
     z-index: 1000;
     padding: 20px 0;
     transition: var(--transition);
-    background: rgba(26, 26, 46, 0.95);
+    background: rgba(136, 14, 79, 0.95);
     backdrop-filter: blur(10px);
 }
 
 .navbar.scrolled {
-    background: rgba(26, 26, 46, 0.95);
+    background: rgba(136, 14, 79, 0.95);
     backdrop-filter: blur(10px);
     padding: 15px 0;
     box-shadow: var(--shadow-md);
@@ -211,7 +211,7 @@ img {
    =================================== */
 .hero {
     min-height: 100vh;
-    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    background: linear-gradient(135deg, #880e4f 0%, #ad1457 50%, #c2185b 100%);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -750,7 +750,7 @@ img {
    =================================== */
 .coming-soon {
     padding: 100px 0;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #ec407a 0%, #f48fb1 100%);
     text-align: center;
 }
 
@@ -918,7 +918,7 @@ img {
    =================================== */
 .page-header {
     min-height: 50vh;
-    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    background: linear-gradient(135deg, #880e4f 0%, #ad1457 50%, #c2185b 100%);
     display: flex;
     justify-content: center;
     align-items: center;
