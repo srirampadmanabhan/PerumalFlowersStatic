@@ -42,26 +42,37 @@
     </div>
 
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-overlay"></div>
-        <iframe 
-            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
-            src="https://www.youtube.com/embed/Z4rOmRjezbw" 
-            frameborder="0" 
-            allowfullscreen>
-        </iframe>
-        <div class="hero-content">
-            <p class="hero-badge">Since 1990</p>
-            <h1 class="hero-title">Perumal Flowers</h1>
-            <p class="hero-subtitle">Your Trusted Partner for Fresh Flowers, Pooja Items & Daily Essentials</p>
-            <p class="hero-coming-soon">🪷 Online Store Launching Soon — Fresh Flowers at Your Doorstep! 🪷</p>
-            <div class="hero-buttons">
-                <a href="#branches" class="btn btn-primary">Visit Our Stores</a>
-                <a href="about.html" class="btn btn-secondary">Learn More</a>
+    <section class="hero-carousel">
+        <div class="hero-carousel-track">
+            <!-- Slide 1: YouTube Video -->
+            <div class="hero-slide hero-slide-video">
+                <div class="hero-video-wrapper">
+                    <iframe
+                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
+                        src="https://www.youtube.com/embed/6XH_WA3F13E"
+                        frameborder="0"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+            <!-- Slide 2: Original Banner -->
+            <div class="hero-slide hero-slide-banner">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <p class="hero-badge">Since 1990</p>
+                    <h1 class="hero-title">Perumal Flowers</h1>
+                    <p class="hero-subtitle">Your Trusted Partner for Fresh Flowers, Pooja Items & Daily Essentials</p>
+                    <p class="hero-coming-soon">🪷 Online Store Launching Soon — Fresh Flowers at Your Doorstep! 🪷</p>
+                    <div class="hero-buttons">
+                        <a href="#branches" class="btn btn-primary">Visit Our Stores</a>
+                        <a href="about.html" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="hero-scroll">
-            <i class="fas fa-chevron-down"></i>
+        <!-- Scroll hint arrow -->
+        <div class="hero-carousel-hint">
+            <i class="fas fa-chevron-right"></i>
         </div>
     </section>
 
@@ -678,6 +689,19 @@
                 }
             });
         });
+
+        // Hide carousel hint on scroll
+        const carouselTrack = document.querySelector('.hero-carousel-track');
+        const carouselHint = document.querySelector('.hero-carousel-hint');
+        if (carouselTrack && carouselHint) {
+            carouselTrack.addEventListener('scroll', () => {
+                if (carouselTrack.scrollLeft > 50) {
+                    carouselHint.style.opacity = '0';
+                } else {
+                    carouselHint.style.opacity = '';
+                }
+            });
+        }
 
         // Navbar background on scroll
         window.addEventListener('scroll', () => {
